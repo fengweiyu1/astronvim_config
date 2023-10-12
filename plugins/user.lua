@@ -35,4 +35,35 @@ return {
       { "<leader>T", "<cmd>TodoTelescope<cr>", desc = "Open Telescope todo list" },
     },
   },
+  -- *******************************************
+  -- *************  Diffview.nvim **************
+  -- *******************************************
+  {
+    "sindrets/diffview.nvim",
+    event = "User AStroFile",
+    cmd = { "DiffviewOpen", "DiffviewClose", "DiffviewToggleFiles", "DiffviewFocusFiles" },
+    keys = {
+      { "<leader>gd", "<cmd>DiffviewOpen<cr>", desc = "Open Diffview" },
+      { "<leader>gD", "<cmd>DiffviewClose<cr>", desc = "Close Diffview" },
+    },
+
+    -- *******************************************
+    -- *************  copilot.nvim ***************
+    -- *******************************************
+    {
+      "github/copilot.vim",
+    },
+    -- *******************************************
+    -- *************  vim-table-mode.lua *********
+    -- *******************************************
+    {
+      "dhruvasagar/vim-table-mode",
+      event = "User AStroFile",
+      cmd = { "TableModeToggle", "TableModeRealign" },
+      keys = {
+        { "<leader>tm", "<cmd>TableModeToggle<cr>", desc = "Toggle Table Mode" },
+        { "<leader>tr", "<cmd>TableModeRealign<cr>", desc = "Realign Table" },
+      },
+    },
+  },
 }
