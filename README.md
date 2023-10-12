@@ -34,3 +34,12 @@ git clone https://github.com/fengweiyu1/astronvim_config ~/.config/nvim/lua/user
 ```shell
 nvim
 ```
+#### update
+
+```shell
+cd ~/.config/nvim/lua/user
+git add .
+git commit -m "Description of changes"
+git push
+
+```
